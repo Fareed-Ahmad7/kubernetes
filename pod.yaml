@@ -1,0 +1,12 @@
+apiVersion : v1
+kind : Pod
+metadata:
+  name : first-pod
+  labels:
+    event : kubernetes
+spec:
+  containers:
+  - name: node
+    image: farid77/learn_kubernetes:1.0
+    ports:
+    - containerPort: 8080
